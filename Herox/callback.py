@@ -51,23 +51,23 @@ async def cbmenu(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cb_start"))
 async def cb_start(_, query: CallbackQuery):
     await query.edit_message_text(
-       f"""ʜᴇʟʟᴏ [✨](https://telegra.ph/file/ea8d4bee1c0fac3814e11.jpg) **ᴡᴇʟᴄᴏᴍᴇ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
- **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
- **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
- **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop**""",
+       f"""Salam [✨](https://telegra.ph/file/ea8d4bee1c0fac3814e11.jpg) **xoş gəldin [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+ **Qruplarda video zengli oxuda bilərsiz !!**
+ **Sadəcə meni qrupa əlavə et və yetki ver 💫**
+ **Hər hansı yardım üçün @king_sohbet_33 qoşulun**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ",
+                        "Məni qrupa əlavə et",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton(
-                    "• Cᴏᴍᴍᴀɴᴅs", callback_data="cb_cmd"),],
+                    "• Əmrlər", callback_data="cb_cmd"),],
                 [
-                    InlineKeyboardButton("• Oᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
-                    InlineKeyboardButton("• Dᴇᴠᴇʟᴏᴘᴇʀ ", url=f"https://t.me/herox_xd"),
+                    InlineKeyboardButton("• Sahib", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("• Tərtibatçı ", url=f"https://t.me/nihat_33"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -79,7 +79,7 @@ async def cb_start(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Sᴏᴜʀᴄᴇ Cᴏᴅᴇ •", url="https://github.com/SJMxADITI/TrickyMusic"
+                        "• Sᴏᴜʀᴄᴇ Cᴏᴅᴇ •", url="https://github.com/nihat870/TrickyMusic"
                     )
                 ],
             ]
@@ -95,9 +95,9 @@ async def cb_start(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cb_cmd"))
 async def cb_cmd(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello !**
+        f"""✨ **Salam !**
 » **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴs 🔭 !**
-⚡ Powered by [H E R O X](https://t.me/Herox_xd)""",
+⚡ Powered by [N İ H A T](https://t.me/Nihat_33)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -114,20 +114,20 @@ async def cb_cmd(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cb_basic"))
 async def cb_basic(_, query: CallbackQuery):
     await query.edit_message_text(  
-        f"""𝙎𝙞𝙢𝙥𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 
+        f""" SADƏ ƏMRLƏR 
         
         
-•  `/play (song name)` 
-•  `/vplay (song name)` 
-•  `/vstream (song name)` 
-•  `/skip` - skip the current song
-•  `/end` - stop music play
-•  `/pause` - pause song play
-•  `/resume` - resume song play
-•  `/mute` - mute assistant in vc
-•  `/lyrics (song name)`
+•  `/play (mahnı adı)` 
+•  `/vplay (mahnı adı)` 
+•  `/vstream (mahnı adı)` 
+•  `/skip` - mahnını ötürün
+•  `/end` - mahnını dayandır 
+•  `/pause` - mahnını müvəqqəti dayandır
+•  `/resume` - mahnını dawam etdirir
+•  `/mute` - vc-də səssiz köməkçi
+•  `/lyrics - (mahnı adı`
 
-⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
+⚡ Powered By [N İ H A T](https://t.me/Nihat_33) .""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
@@ -137,7 +137,7 @@ async def cb_basic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cb_advance"))
 async def cb_advance(_, query: CallbackQuery):
     await query.edit_message_text(    
-      f"""𝙀𝙭𝙩𝙧𝙖 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨
+      f""" ƏLAVƏ ƏMRLƏR 
 • `/ping` pong !!
 • `/start` - Alive msg ~group 
 • `/id` - Find out your grp and your id // stickers id also
@@ -145,7 +145,7 @@ async def cb_advance(_, query: CallbackQuery):
 • `/rmd` clean all downloads
 • `/clean` - clear storage 
 
-⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
+⚡ Powered By [N İ H A T](https://t.me/Nihat_33) .""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
@@ -155,14 +155,14 @@ async def cb_advance(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cb_fun"))
 async def cb_fun(_, query: CallbackQuery):
     await query.edit_message_text(  
-        f"""𝙁𝙪𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
+        f""" ƏYLƏNCƏLİ ƏMRLƏR 
 • `/truth` 🌝
 • `/dare`  🌝
 • `/sjm`    🌝
 • `/abhi`   🌝
 • `/tricky` 🌝   
 
-⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
+⚡ Powered By [N İ H A T](https://t.me/nihat_33) .""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
