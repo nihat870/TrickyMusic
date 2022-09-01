@@ -9,8 +9,8 @@ from pyrogram.types import (
 def stream_markup(user_id):
   buttons = [
     [
-      InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data=f'cbmenu | {user_id}'),
-      InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data=f'cls'),
+      InlineKeyboardButton(text="• Menu", callback_data=f'cbmenu | {user_id}'),
+      InlineKeyboardButton(text="• Bağla", callback_data=f'cls'),
     ],
   ]
   return buttons
@@ -28,7 +28,7 @@ def menu_markup(user_id):
       InlineKeyboardButton(text="🔊", callback_data=f'cbunmute | {user_id}'),
     ],
     [
-      InlineKeyboardButton(text="🗑 Close", callback_data='cls'),
+      InlineKeyboardButton(text="🗑 Bağla", callback_data='cls'),
     ]
   ]
   return buttons
@@ -38,7 +38,7 @@ close_mark = InlineKeyboardMarkup(
   [
     [
       InlineKeyboardButton(
-        "🗑 Close", callback_data="cls"
+        "🗑 Bağla", callback_data="cls"
       )
     ]
   ]
@@ -49,7 +49,7 @@ back_mark = InlineKeyboardMarkup(
   [
     [
       InlineKeyboardButton(
-        "🔙 Go Back", callback_data="cbmenu"
+        "🔙 Geri", callback_data="cbmenu"
       )
     ]
   ]
