@@ -1,7 +1,7 @@
 {
-    "name": "TrickyAbhi-Music",
+    "name": "King-Music",
     "logo": "",
-    "description": "TrickyAbhi-Music allow you to stream music trought the telegram voice chat feature.",
+    "description": "King-Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": [
         "music", 
         "voice chat", 
@@ -40,17 +40,17 @@
         },
          "DURATION_LIMIT": {
             "description": "PUT YOUR BOT duration time.",
-            "value": "70",
+            "value": "240",
             "required": true
         },
         "GROUP_SUPPORT": {
             "description": "PUT YOUR group username without @.",
-            "value": "TrickyAbhii_Op",
+            "value": "king_sohbet_33",
             "required": true
         },
         "UPDATES_CHANNEL": {
             "description": "PUT YOUR channel username without @.",
-            "value": "Techno_Trickop",
+            "value": "gunes_isigi_33",
             "required": true
         },
     
